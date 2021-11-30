@@ -2,6 +2,7 @@
 	import TopAppBar, {Title, Row, Section} from '@smui/top-app-bar';
 	import Button, { Label } from '@smui/button';
 	import Hero from '../components/hero.svelte';
+	import Latest from '../components/latest.svelte';
 </script>
 
 <TopAppBar
@@ -23,7 +24,7 @@
 
 <Hero/>
 
-<div>latest</div>
+<Latest/>
 <div>about</div>
 <div>support</div>
 <div>contact</div>
