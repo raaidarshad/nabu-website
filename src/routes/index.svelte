@@ -4,6 +4,7 @@
 	import Hero from '../components/hero.svelte';
 	import Latest from '../components/latest.svelte';
 	import About from '../components/about.svelte';
+	import Support from '../components/support.svelte';
 </script>
 
 <TopAppBar
@@ -27,6 +28,6 @@
 
 <Latest/>
 <About/>
-<div>support</div>
+<Support/>
 <div>contact</div>
 <div>footer</div>
