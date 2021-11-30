@@ -6,6 +6,7 @@
 	import About from '../components/about.svelte';
 	import Support from '../components/support.svelte';
 	import Contact from '../components/contact.svelte';
+	import Footer from '../components/footer.svelte';
 </script>
 
 <TopAppBar
@@ -31,4 +32,4 @@
 <About/>
 <Support/>
 <Contact/>
-
+<Footer/>
