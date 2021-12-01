@@ -17,7 +17,7 @@
 
 <style>
     main {
-        height: 300px;
+        height: 400px;
         padding-top: 40px;
         background-color: #95BF47;
     }
@@ -31,7 +31,7 @@
     #support {
         font-size: 36px;
 	    font-family: Unica77 LL;
-        font-weight: normal;
+        font-weight: bold;
         color: white;
     }
 

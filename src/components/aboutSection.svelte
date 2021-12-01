@@ -44,6 +44,7 @@
         font-size: 36px;
         font-family: Unica77 LL;
         color: white;
+        font-weight: bold;
     }
 
     .about-section-right {
