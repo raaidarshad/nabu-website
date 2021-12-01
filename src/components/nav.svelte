@@ -24,16 +24,20 @@
 
 <style>
     #logo-name {
-        font-family: GT Alpina;
+        font-family: 'Alegreya', serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 32px;
+        font-size: 48px;
+        line-height: 55px;
         color: #4F4F4F;
 
     }
 
     span {
-        font-family: Unica77 LL;
+        font-family: 'Catamaran', sans-serif;
+        letter-spacing: -0.02em;
+        font-size: 20px;
+        line-height: 25px;
         font-style: normal;
         font-weight: normal;
         color: black;

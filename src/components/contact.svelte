@@ -101,8 +101,8 @@
     }
 
     #contact-section {
-        min-width: 800px;
-        max-width: 90vw;
+        min-width: 830px;
+        max-width: 1300px;
         display: block;
         margin: 0 auto;
     }
@@ -113,7 +113,7 @@
 
     #contact-section-left {
         width: 60%;
-        margin-right: 20px;
+        margin-right: 30px;
     }
 
     #contact-section-right {
@@ -122,9 +122,11 @@
 
     #contact {
         font-size: 80px;
-        font-family: Unica77 LL;
+        font-family: 'Catamaran', sans-serif;
+        letter-spacing: -0.02em;
         color: black;
         font-weight: bold;
+        margin-top: 0;
     }
 
     #contact-inputs {

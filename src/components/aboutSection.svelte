@@ -21,12 +21,12 @@
 <style>
     main {
         display: flex;
-        height: 220px;
+        height: 400px;
     }
 
     .about-section-left {
-        margin-right: 20px;
-        width: 470px;
+        margin-right: 30px;
+        width: 60%;
     }
 
     .about-section-left-content {
@@ -35,19 +35,20 @@
     }
 
     .about-section-left-number {
-        font-size: 14px;
-        font-family: Lato;
-        margin-right: 20px;
+        font-size: 20px;
+        font-family: 'Roboto Mono', monospace;
+        margin-right: 50px;
     }
 
     .about-section-left-title {
-        font-size: 36px;
-        font-family: Unica77 LL;
+        font-size: 80px;
+        font-family: 'Catamaran', sans-serif;
+        letter-spacing: -0.02em;
         color: white;
         font-weight: bold;
     }
 
     .about-section-right {
-        width: 310px;
+        width: 40%;
     }
 </style>

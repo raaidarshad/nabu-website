@@ -18,8 +18,16 @@
         padding-top: 20px;
     }
 
+    #about {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-family: 'Roboto Mono', monospace;
+    }
+
     #about-content {
-        width: 800px;
+        min-width: 830px;
+        max-width: 1300px;
 		display: block;
 		margin: 0 auto;
     }

@@ -17,20 +17,22 @@
 
 <style>
     main {
-        height: 400px;
+        height: 90vh;
         padding-top: 40px;
         background-color: #95BF47;
     }
 
     #support-section {
-        width: 800px;
+        min-width: 830px;
+        max-width: 1300px;
         display: block;
         margin: 0 auto;
     }
 
     #support {
-        font-size: 36px;
-	    font-family: Unica77 LL;
+        font-size: 80px;
+	    font-family: 'Catamaran', sans-serif;
+        letter-spacing: -0.02em;
         font-weight: bold;
         color: white;
     }
@@ -40,11 +42,11 @@
     }
 
     #support-content-left {
-        margin-right: 20px;
-        width: 390px;
+        margin-right: 30px;
+        width: 50%;
     }
 
     #support-content-right {
-        width: 390px;
+        width: 50%;
     }
 </style>
