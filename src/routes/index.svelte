@@ -12,18 +12,11 @@
 	<Nav/>
 	<Hero/>
 	<!-- <Latest/> -->
-	<div id="padded-content">
-		<About/>
-		<Support/>
-		<Contact/>
-	</div>
+	<About/>
+	<Support/>
+	<Contact/>
 	<Footer/>
 </main>
 
 <style>
-	#padded-content {
-		width: 800px;
-		display: block;
-		margin: 0 auto;
-	}
 </style>
