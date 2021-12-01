@@ -4,7 +4,7 @@
 
 // Svelte Colors!
 @use '@material/theme/index' as theme with (
-	$primary: #ff3e00,
+	$primary: black,
 	$secondary: #fff,
 	$surface: #fff,
 	$background: #fff,
@@ -34,9 +34,10 @@ a:visited {
 
 p {
 	font-family: GT Alpina;
+	font-size: 30px;
 }
 
 :root {
-	--mdc-theme-primary: #ff3e00;
+	--mdc-theme-primary: black;
 	--mdc-theme-secondary: #fff;
 }
