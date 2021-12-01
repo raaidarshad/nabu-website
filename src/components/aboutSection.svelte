@@ -43,6 +43,7 @@
     .about-section-left-title {
         font-size: 36px;
         font-family: Unica77 LL;
+        color: white;
     }
 
     .about-section-right {

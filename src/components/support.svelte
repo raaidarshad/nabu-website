@@ -1,6 +1,6 @@
 <main>
     <hr/>
-    <span id="support">Support Us</span>
+    <h1 id="support">Support Us</h1>
     <div id="support-content">
         <div id="support-content-left">
             <hr/>
@@ -17,11 +17,15 @@
     main {
         height: 300px;
         width: 800px;
+        padding-top: 20px;
+        background-color: #95BF47;
     }
 
     #support {
         font-size: 36px;
 	    font-family: Unica77 LL;
+        font-weight: normal;
+        color: white;
     }
 
     #support-content {

@@ -15,5 +15,7 @@
 <style>
     main {
         width: 800px;
+        background-color: #D2CFC9;
+        padding-top: 20px;
     }
 </style>
