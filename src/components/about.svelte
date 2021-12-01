@@ -13,4 +13,7 @@
 </main>
 
 <style>
+    main {
+        width: 800px;
+    }
 </style>

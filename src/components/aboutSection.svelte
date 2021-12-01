@@ -26,7 +26,7 @@
 
     .about-section-left {
         margin-right: 20px;
-        width: 400px;
+        width: 470px;
     }
 
     .about-section-left-content {
@@ -42,10 +42,10 @@
 
     .about-section-left-title {
         font-size: 36px;
-        font-family: Unica77 LL
+        font-family: Unica77 LL;
     }
 
     .about-section-right {
-        width: 300px;
+        width: 310px;
     }
 </style>
