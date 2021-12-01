@@ -6,7 +6,7 @@
 <main>
     <TopAppBar
     variant="static"
-    color="primary">
+    color="secondary">
     <Row>
         <Section>
             <Title><span id="logo-name">Nabu</span></Title>
@@ -28,11 +28,14 @@
         font-style: normal;
         font-weight: normal;
         font-size: 32px;
+        color: #4F4F4F;
+
     }
 
     span {
         font-family: Unica77 LL;
         font-style: normal;
         font-weight: normal;
+        color: black;
     }
 </style>
