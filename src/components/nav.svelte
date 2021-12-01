@@ -9,15 +9,32 @@
     color="primary">
     <Row>
         <Section>
-            <Title>Nabu</Title>
+            <Title><span id="logo-name">Nabu</span></Title>
         </Section>
         <Section align="end" toolbar>
-            <Button href="#latest"><Label>Latest</Label></Button>
-            <Button href="#about"><Label>About</Label></Button>
-            <Button href="#support"><Label>Support</Label></Button>
-            <Button href="#contact"><Label>Contact</Label></Button>
-            <Button href="#signup"><Label>Sign Up</Label></Button>
+            <Button href="#latest"><Label><span>Latest</span></Label></Button>
+            <Button href="#about"><Label><span>About</span></Label></Button>
+            <Button href="#support"><Label><span>Support</span></Label></Button>
+            <Button href="#contact"><Label><span>Contact</span></Label></Button>
+            <Button href="#signup"><Label><span>Sign Up</span></Label></Button>
         </Section>
     </Row>
     </TopAppBar>
 </main>
+
+<style>
+    #logo-name {
+        font-family: GT Alpina;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+    }
+
+    span {
+        font-family: Unica77 LL;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+    }
+</style>
