@@ -27,14 +27,12 @@
         font-family: GT Alpina;
         font-style: normal;
         font-weight: normal;
-        font-size: 48px;
+        font-size: 32px;
     }
 
     span {
         font-family: Unica77 LL;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
-        line-height: 25px;
     }
 </style>
