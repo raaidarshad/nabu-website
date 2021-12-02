@@ -4,7 +4,7 @@
             <h1>The latest news from every angle.</h1>
         </div>
         <div id="hero-sub-text">
-            <p>See how a story is covered by every outlet, all in one piece. Sign up for a weekly newsletter and updates on future tools.</p>
+            <p>See how a story is covered by every outlet, all in one place. Sign up for a weekly newsletter and updates on future tools.</p>
         </div>
     
         <div id="hero-rect-1"/>

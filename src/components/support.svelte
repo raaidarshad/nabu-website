@@ -17,7 +17,7 @@
 
 <style>
     main {
-        height: 817px;
+        height: 700px;
         padding-top: 40px;
         background-color: #95BF47;
     }
