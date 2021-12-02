@@ -21,7 +21,7 @@
 <style>
     main {
         display: flex;
-        height: 400px;
+        height: 380px;
     }
 
     .about-section-left {

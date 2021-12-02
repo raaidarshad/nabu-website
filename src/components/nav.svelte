@@ -6,7 +6,8 @@
 <main>
     <TopAppBar
     variant="static"
-    color="secondary">
+    color="secondary"
+    style="height: 97px; display: flex; justify-content: center;">
     <Row>
         <Section>
             <Title><span id="logo-name">Nabu</span></Title>

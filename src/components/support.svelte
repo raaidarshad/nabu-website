@@ -1,6 +1,6 @@
 <main>
     <div id="support-section">
-        <hr/>
+        <hr id="support-top-hr"/>
         <h1 id="support">Support Us</h1>
         <div id="support-content">
             <div id="support-content-left">
@@ -17,7 +17,7 @@
 
 <style>
     main {
-        height: 90vh;
+        height: 817px;
         padding-top: 40px;
         background-color: #95BF47;
     }
@@ -29,12 +29,18 @@
         margin: 0 auto;
     }
 
+    #support-top-hr {
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
     #support {
         font-size: 80px;
 	    font-family: 'Catamaran', sans-serif;
         letter-spacing: -0.02em;
         font-weight: bold;
         color: white;
+        margin-top: 0;
     }
 
     #support-content {

@@ -54,7 +54,7 @@
                     <Textfield
                     variant="outlined"
                     bind:value={contactName}
-                    style="background-color: white; width: 100%; height: 115px;"
+                    style="background-color: white; width: 100%; height: 115px; font-family: 'Roboto Mono', monospace;"
                     label="Name">
                     <HelperText slot="helper">Enter your name</HelperText>
                 </Textfield>
@@ -63,7 +63,7 @@
                     <Textfield
                     variant="outlined"
                     bind:value={contactEmail}
-                    style="background-color: white; width: 100%; height: 115px;"
+                    style="background-color: white; width: 100%; height: 115px; font-family: 'Roboto Mono', monospace;"
                     label="Email">
                         <HelperText slot="helper">Enter your email address</HelperText>
                     </Textfield>
@@ -73,12 +73,12 @@
             helperLine$style="width: 100%;"
             textarea
             input$maxlength={500}
-            style="background-color: white; width: 100%; height: 270px;"
+            style="background-color: white; width: 100%; height: 270px; font-family: 'Roboto Mono', monospace;"
             bind:value={contactMessage}
             label="Message"
           >
             <CharacterCounter slot="internalCounter">0 / 500</CharacterCounter>
-            <HelperText slot="helper">Helper Text</HelperText>
+            <HelperText slot="helper">Enter your message.</HelperText>
           </Textfield>
         </div>
         <Button on:click={submitContact} disabled={submitDisabled}>
@@ -96,7 +96,7 @@
 <style>
     main {
         background-color: #E7E2DE80;
-        height: 80vh;
+        height: 866px;
         padding-top: 40px;
     }
 
@@ -109,6 +109,7 @@
 
     #contact-section-text {
         display: flex;
+        margin-top: 30px;
     }
 
     #contact-section-left {
