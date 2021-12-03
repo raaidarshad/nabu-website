@@ -19,7 +19,7 @@
     }
 
     #about {
-        margin-top: 40px;
+        margin-top: 60px;
         margin-bottom: 60px;
         font-size: 20px;
         font-family: 'Roboto Mono', monospace;

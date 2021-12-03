@@ -11,7 +11,7 @@
 <main>
 	<Nav/>
 	<Hero/>
-	<!-- <Latest/> -->
+	<Latest/>
 	<About/>
 	<Support/>
 	<Contact/>
