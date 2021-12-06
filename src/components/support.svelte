@@ -8,7 +8,7 @@
                 <p>A small amount goes towards the technology: This website, the data processing and machine learning pipelines, the corresponding databases, etc. This varies as tools and features are added/removed, but is generally on the order of a few hundred dollars. After the tech costs, we pay our small team.</p>
             </div>
             <div id="support-content-right">
-                <hr/>
+                <hr id="support-content-right-hr"/>
                 <p>Our time goes into maintaining existing solutions, making them better, then researching, designing, and building new ways to further our goal. Beyond that, additional funding simply means we can dedicate more time and people to creating tools and services to identify and understand bias.</p>
             </div>
         </div>
@@ -25,7 +25,7 @@
     }
 
     #support-section {
-        min-width: 830px;
+        min-width: 660px;
         max-width: 1300px;
         display: block;
         margin: 0 auto;
@@ -56,5 +56,43 @@
 
     #support-content-right {
         width: 50%;
+    }
+    
+    @media screen and (max-width: 920px) {
+        #support-content {
+            flex-direction: column;
+        }
+
+        #support-content-left {
+            width: 100%;
+        }
+
+        #support-content-right {
+            width: 100%;
+        }
+
+        #support-content-right-hr {
+            display: none;
+        }
+
+        main {
+            height: 900px;
+        }
+    }
+
+    @media screen and (max-width: 661px) {
+        main {
+            height: 800px;
+        }
+
+        #support-section {
+            max-width: 600px;
+            min-width: 300px;
+        }
+
+        #support {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
     }
 </style>

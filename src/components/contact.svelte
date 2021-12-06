@@ -153,4 +153,11 @@
     p {
         font-size: 30px;
     }
+
+    @media screen and (max-width: 661px) {
+        #contact {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+    }
 </style>
