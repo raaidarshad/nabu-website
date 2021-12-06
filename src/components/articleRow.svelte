@@ -7,6 +7,7 @@
     }
     export let rowData: Article;
     export let num: number;
+    export let hasBottomBar: boolean;
 </script>
 
 <main>
@@ -16,17 +17,16 @@
         <span class="article-source">{rowData.sourceName}</span>
         <span class="article-date">{rowData.date}</span>
     </div>
-    <hr/>
+    {#if hasBottomBar}
+        <hr/>
+    {/if}
 </main>
 
 <style>
-    hr {
-        margin: 28px 0;
-    }
-
     div {
         display: flex;
         align-items: center;
+        margin: 28px 0;
     }
 
     .article-number {

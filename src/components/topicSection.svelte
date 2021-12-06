@@ -28,13 +28,12 @@
         {#if isOpen}
         <div transition:slide={{ duration: 300 }}>
             {#each articles as item, idx}
-                <ArticleRow rowData={item} num={idx + 1}/>
+                <ArticleRow rowData={item} num={idx + 1} hasBottomBar={idx + 1 !== articles.length}/>
             {/each}
         </div>
         {/if}
-        {#if !isOpen}
-            <hr/>
-        {/if}
+        <hr/>
+
     </div>
 </main>
 
