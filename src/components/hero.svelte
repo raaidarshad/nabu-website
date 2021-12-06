@@ -121,7 +121,7 @@
 
         #hero-sub-text {
             width: 300px;
-            margin-top: 60px;
+            margin-top: 160px;
         }
 
         main {
