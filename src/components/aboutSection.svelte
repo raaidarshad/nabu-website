@@ -51,4 +51,33 @@
     .about-section-right {
         width: 40%;
     }
+
+    @media screen and (max-width: 920px) {
+        main {
+            flex-direction: column;
+        }
+
+        .about-section-left {
+            width: 100%;
+        }
+
+        .about-section-right {
+            width: 100%;
+        }
+
+        p {
+            margin-top: 40px;
+        }
+    }
+
+    @media screen and (max-width: 661px) {
+        .about-section-left-title {
+            font-size: 50px;
+        }
+
+        .about-section-left-number {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+    }
 </style>

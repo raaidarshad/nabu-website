@@ -26,7 +26,7 @@ body {
 }
 
 .small-header {
-	margin-top: 40px;
+	margin-top: 60px;
 	margin-bottom: 60px;
 	font-size: 20px;
 	font-family: 'Roboto Mono', monospace;
@@ -79,5 +79,11 @@ p {
 	p {
 		font-size: 20px;
 		line-height: 30px;
+	}
+
+	.small-header {
+		font-size: 16px;
+		margin-top: 20px;
+		margin-bottom: 30px;
 	}
 }

@@ -14,7 +14,7 @@
 
 <style>
     main {
-        margin-top: 60px;
+        padding-top: 20px;
         margin-bottom: 110px;
         padding-left: 10px;
         padding-right: 10px;

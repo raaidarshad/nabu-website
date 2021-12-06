@@ -20,14 +20,17 @@
         padding-right: 10px;
     }
 
-    #about {
-        margin-top: 60px;
-    }
-
     #about-content {
-        min-width: 830px;
+        min-width: 660px;
         max-width: 1300px;
 		display: block;
 		margin: 0 auto;
+    }
+
+    @media screen and (max-width: 661px) {
+        #about-content {
+            max-width: 600px;
+            min-width: 300px;
+        }
     }
 </style>
