@@ -25,6 +25,13 @@ body {
 	letter-spacing: 0.01em;
 }
 
+.small-header {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+}
+
 a {
 	color: #40b3ff;
 }
@@ -66,4 +73,11 @@ p {
 :root {
 	--mdc-theme-primary: black;
 	--mdc-theme-secondary: #fff;
+}
+
+@media screen and (max-width: 661px) {
+	p {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }

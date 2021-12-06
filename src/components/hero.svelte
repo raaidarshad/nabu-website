@@ -124,11 +124,6 @@
             margin-top: 60px;
         }
 
-        p {
-            font-size: 20px;
-            line-height: 30px;
-        }
-
         main {
             height: 600px;
         }

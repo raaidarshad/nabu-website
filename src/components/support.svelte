@@ -20,6 +20,8 @@
         height: 700px;
         padding-top: 40px;
         background-color: #95BF47;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     #support-section {

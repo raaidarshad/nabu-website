@@ -98,6 +98,8 @@
         background-color: #E7E2DE80;
         height: 700px;
         padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     #contact-section {
