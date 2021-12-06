@@ -30,7 +30,8 @@
     }
 
     #hero-main-text {
-        width: 905px;
+        max-width: 905px;
+        min-width: 600px;
         margin-left: 49px;
         position: relative;
         z-index: 2;
@@ -57,7 +58,7 @@
         background-color: #FF6719;
         width: 670px;
         height: 590px;
-        bottom: 0;
+        top: 247px;
         left: 500px;
     }
 
@@ -89,4 +90,48 @@
         bottom: 80px;
         left: 1170px;
     }
+
+    @media screen and (max-width: 815px) {
+        #hero-rect-1 {
+            left: 61%;
+            top: 147px;
+        }
+
+        /* #hero-rect-2 {
+            left: 88%;
+        } */
+
+        #hero-tri-1 {
+            left: 61%;
+            top: 17px;
+            /* top:  */
+        }
+    }
+
+    @media screen and (max-width: 661px) {
+        #hero-main-text {
+            max-width: 400px;
+            min-width: 200px;
+        }
+
+        h1 {
+        font-size: 60px;
+        line-height: 60px;
+        }
+
+        #hero-sub-text {
+            width: 300px;
+            margin-top: 60px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        main {
+            height: 600px;
+        }
+    }
+
 </style>
