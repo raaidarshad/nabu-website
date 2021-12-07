@@ -83,4 +83,26 @@
     [aria-expanded=true] .horizontal-line {
         transform: scaleX(0);
     }
+
+    @media screen and (max-width: 900px) {
+        .topic-section-header {
+            font-size: 60px;
+        }
+
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    @media screen and (max-width: 661px) {
+        .topic-section-header {
+            font-size: 30px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
 </style>
