@@ -1,0 +1,93 @@
+@use 'sass:color';
+
+@use '@material/theme/color-palette';
+
+// Svelte Colors!
+@use '@material/theme/index' as theme with (
+	$primary: black,
+	$secondary: #fff,
+	$surface: #fff,
+	$background: #fff,
+	$error: color-palette.$red-900
+);
+
+html,
+body {
+	background-color: theme.$surface;
+	color: theme.$on-surface;
+	margin: 0;
+	padding: 0;
+}
+
+.section-header {
+	font-family: Lato;
+	font-size: 20px;
+	letter-spacing: 0.01em;
+}
+
+.small-header {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+a {
+	color: #40b3ff;
+}
+a:visited {
+	color: color.scale(#40b3ff, $lightness: -35%);
+}
+
+p {
+	font-family: 'Alegreya', serif;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.mdc-text-field__input {
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+.mdc-floating-label {
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+.mdc-text-field-helper-text {
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+.mdc-button__label {
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+.mdc-button {
+	text-transform: none !important;
+	font-family: 'Catamaran', sans-serif !important;
+}
+
+.fd {
+	font-family: 'Catamaran', sans-serif !important;
+}
+
+:root {
+	--mdc-theme-primary: black;
+	--mdc-theme-secondary: #fff;
+}
+
+@media screen and (max-width: 661px) {
+	p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.mdc-button {
+		font-size: 16px;
+	}
+
+	.small-header {
+		font-size: 16px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+}
