@@ -91,7 +91,7 @@
         }
 
         #support {
-            font-size: 60px;
+            font-size: 50px;
             margin-bottom: 20px;
         }
     }

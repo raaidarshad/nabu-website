@@ -174,7 +174,7 @@
 
     @media screen and (max-width: 661px) {
         #contact {
-            font-size: 60px;
+            font-size: 50px;
             margin-bottom: 20px;
         }
 
