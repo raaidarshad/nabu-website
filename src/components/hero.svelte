@@ -112,6 +112,7 @@
         #hero-main-text {
             max-width: 400px;
             min-width: 200px;
+            margin-left: 20px;
         }
 
         h1 {
@@ -122,6 +123,7 @@
         #hero-sub-text {
             width: 300px;
             margin-top: 160px;
+            margin-left: 20px;
         }
 
         main {
