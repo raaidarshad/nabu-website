@@ -97,14 +97,9 @@
             top: 147px;
         }
 
-        /* #hero-rect-2 {
-            left: 88%;
-        } */
-
         #hero-tri-1 {
             left: 61%;
             top: 17px;
-            /* top:  */
         }
     }
 
@@ -124,6 +119,16 @@
             width: 300px;
             margin-top: 160px;
             margin-left: 20px;
+        }
+
+        #hero-rect-1 {
+            left: 50%;
+            top: 147px;
+        }
+
+        #hero-tri-1 {
+            left: 50%;
+            top: 17px;
         }
 
         main {
