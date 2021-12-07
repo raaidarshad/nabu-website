@@ -103,7 +103,7 @@
     }
 
     #contact-section {
-        min-width: 830px;
+        min-width: 300px;
         max-width: 1300px;
         display: block;
         margin: 0 auto;
@@ -154,10 +154,32 @@
         font-size: 30px;
     }
 
+    @media screen and (max-width: 920px) {
+        #contact-section-text {
+            flex-direction: column;
+        }
+
+        #contact-section-left {
+            width: 100%;
+        }
+
+        #contact-section-right {
+            width: 100%;
+        }
+
+        main {
+            height: 800px;
+        }
+    }
+
     @media screen and (max-width: 661px) {
         #contact {
             font-size: 60px;
             margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
         }
     }
 </style>
