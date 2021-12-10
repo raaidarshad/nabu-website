@@ -17,8 +17,8 @@
     <div>
         <button class="topic-section-header" on:click={toggle} aria-expanded={isOpen}>
             <span class="topic-section-top-topics">
-                {#each topics as item}
-                <span style="color: hsl(0, 0%, {(1-item.weight)*100}%">{item.term}.</span>
+                {#each topics.slice(0, 3) as item}
+                <span style="color: hsl(0, 0%, {(1-item.weight)*60}%">{item.term}.</span>
                 {/each}
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="plus" width="60" height="60" viewBox="0 0 160 160">
