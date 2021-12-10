@@ -1,14 +1,24 @@
 <script>
     import TopicSection from '../components/topicSection.svelte';
+
+    export async function loadData() {
+        const latestData = await (await fetch('/latestData')).json();
+        console.log(latestData.clusters);
+        return latestData;
+    }
 </script>
 
 <main>
     <div id="latest-content">
         <h1 id="latest" class="small-header">Here's the Latest</h1>
         <hr/>
-        <TopicSection topics={[{term: "Glasgow", weight: .8}, {term: "COP26", weight: .7}, {term: "Climate", weight: .6}]} articles={[{headline: "First headline that has gotten really rather long oh no", url: "https://www.google.com", sourceName: "First Source", date: "11.11.21"}, {headline: "Second headline", url: "https://www.google.com", sourceName: "Second Source that is quite long oh no", date: "11.11.21"}, {headline: "Third headline", url: "https://www.google.com", sourceName: "Third Source", date: "14.11.21"}]}/>
-        <TopicSection topics={[{term: "Manchin", weight: .8}, {term: "Democrats", weight: .6}, {term: "Tax", weight: .5}]} articles={[]}/>
-        <TopicSection topics={[{term: "Baldwin", weight: .8}, {term: "Shooting", weight: .7}, {term: "Rust", weight: .5}]} articles={[]}/>
+        {#await loadData()}
+            <p>WAITING</p>
+        {:then latestData}
+            {#each latestData.clusters.slice(0, 3) as cluster}
+                <TopicSection topics={cluster.topics} articles={cluster.articles} />
+            {/each}
+        {/await}
     </div>
 </main>
 

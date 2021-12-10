@@ -1,8 +1,8 @@
 <script lang="ts">
     type Article = {
-        headline: string;
+        title: string;
         url: string;
-        sourceName: string;
+        source: string;
         date: string;
     }
     export let rowData: Article;
@@ -13,8 +13,8 @@
 <main>
     <div>
         <span class="article-number">{(num <10 ? `0${num}` : num)}</span>
-        <a href={rowData.url} class="article-headline">{rowData.headline}</a>
-        <span class="article-source">{rowData.sourceName}</span>
+        <a href={rowData.url} class="article-headline">{rowData.title}</a>
+        <span class="article-source">{rowData.source}</span>
         <span class="article-date">{rowData.date}</span>
     </div>
     {#if hasBottomBar}
