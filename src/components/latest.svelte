@@ -1,5 +1,6 @@
 <script>
     import TopicSection from '../components/topicSection.svelte';
+    import CircularProgress from '@smui/circular-progress';
 
     export async function loadData() {
         const latestData = await (await fetch('/latestData')).json();
@@ -13,7 +14,9 @@
         <h1 id="latest" class="small-header">Here's the Latest</h1>
         <hr/>
         {#await loadData()}
-            <p>WAITING</p>
+        <div id="waiting">
+            <CircularProgress style="height: 32px; width: 32px;" indeterminate />
+        </div>
         {:then latestData}
             {#each latestData.clusters.slice(0, 3) as cluster}
                 <TopicSection topics={cluster.topics} articles={cluster.articles} />
@@ -28,6 +31,12 @@
         margin-bottom: 110px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    #waiting {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
     }
 
     #latest-content {

@@ -38,24 +38,21 @@
     .article-number {
         font-family: 'Roboto Mono', monospace;
         font-size: 20px;
-        width: 85px;
+        width: 5%;
     }
 
     .article-headline {
         font-family: 'Alegreya', serif;
-        font-size: 30px;
-        min-width: 65%;
+        font-size: 28px;
+        width: 65%;
         color: black;
         text-decoration: none;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
     
     .article-source {
         font-family: 'Catamaran', sans-serif;
-        font-size: 26px;
-        width: 200px;
+        font-size: 24px;
+        width: 20%;
         text-align: left;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -64,9 +61,12 @@
 
     .article-date {
         font-family: 'Catamaran', sans-serif;
-        font-size: 26px;
-        width: 85px;
+        font-size: 24px;
+        width: 10%;
         text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     @media screen and (max-width: 900px) {
