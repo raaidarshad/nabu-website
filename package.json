@@ -35,6 +35,7 @@
 	"type": "module",
 	"dependencies": {
 		"@smui/button": "^6.0.0-beta.4",
+		"@smui/circular-progress": "^6.0.0-beta.6",
 		"@smui/icon-button": "^6.0.0-beta.4",
 		"@smui/list": "^6.0.0-beta.4",
 		"@smui/menu": "^6.0.0-beta.4",
