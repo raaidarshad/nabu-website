@@ -19,7 +19,7 @@
         </div>
         {:then latestData}
             {#each latestData.clusters.slice(0, 3) as cluster}
-                <TopicSection topics={cluster.topics} articles={cluster.articles} />
+                <TopicSection topics={cluster.topics} articles={cluster.articles} topicLimit={3}/>
             {/each}
         {/await}
     </div>
