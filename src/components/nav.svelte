@@ -19,11 +19,11 @@
         </Section>
         <div id="nav-wide-menu">
             <Section align="end" toolbar>
-                <Button href="#latest"><Label><span>Latest</span></Label></Button>
-                <Button href="#about"><Label><span>About</span></Label></Button>
-                <Button href="#support"><Label><span>Support</span></Label></Button>
-                <Button href="#contact"><Label><span>Contact</span></Label></Button>
-                <Button href="#signup"><Label><span>Sign Up</span></Label></Button>
+                <Button href="/latest"><Label><span>Latest</span></Label></Button>
+                <Button href="/#about"><Label><span>About</span></Label></Button>
+                <Button href="/#support"><Label><span>Support</span></Label></Button>
+                <Button href="/#contact"><Label><span>Contact</span></Label></Button>
+                <Button href="/#signup"><Label><span>Sign Up</span></Label></Button>
             </Section>
         </div>
         <div id="nav-icon-menu">
@@ -31,19 +31,19 @@
             <Menu bind:this={menu}>
                 <List>
                     <Item>
-                      <Button href="#latest">Latest</Button>
+                      <Button href="/latest">Latest</Button>
                     </Item>
                     <Item>
-                        <Button href="#about">About</Button>
+                        <Button href="/#about">About</Button>
                     </Item>
                     <Item>
-                        <Button href="#support">Support</Button>
+                        <Button href="/#support">Support</Button>
                     </Item>
                     <Item>
-                        <Button href="#contact">Contact</Button>
+                        <Button href="/#contact">Contact</Button>
                     </Item>
                     <Item>
-                        <Button href="#signup">Sign Up</Button>
+                        <Button href="/#signup">Sign Up</Button>
                     </Item>
                 </List>
             </Menu>

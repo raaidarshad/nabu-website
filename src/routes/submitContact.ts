@@ -1,6 +1,6 @@
 type myresponse = {
     status: number;
-    headers?: object;
+    headers?: any;
     body?: {msg: string};
   };
 
