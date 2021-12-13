@@ -9,6 +9,7 @@
 
     export let topics: weightedTopic[];
     export let articles;
+    const numTopics = 3;
 	let isOpen = false
 	const toggle = () => isOpen = !isOpen
 </script>
@@ -17,8 +18,8 @@
     <div>
         <button class="topic-section-header" on:click={toggle} aria-expanded={isOpen}>
             <span class="topic-section-top-topics">
-                {#each topics.slice(0, 3) as item}
-                <span style="color: hsl(0, 0%, {(1-item.weight/topics[0].weight)*100}%">{item.term}.</span>
+                {#each topics.slice(0, numTopics) as item, idx}
+                    <span style="color: hsl(0, 0%, {(1-item.weight/topics[0].weight)*100}%">{item.term}</span>{#if idx + 1 !== numTopics}<span style="color: hsl(0, 0%, {(1-item.weight/topics[0].weight)*100}%">, </span>{/if}
                 {/each}
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="plus" width="60" height="60" viewBox="0 0 160 160">

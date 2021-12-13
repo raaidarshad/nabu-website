@@ -54,9 +54,6 @@
         font-size: 24px;
         width: 20%;
         text-align: left;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
 
     .article-date {
@@ -64,15 +61,15 @@
         font-size: 24px;
         width: 10%;
         text-align: right;
-        overflow: hidden;
+        /* overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        white-space: nowrap; */
     }
 
     @media screen and (max-width: 900px) {
         .article-number {
             font-size: 16px;
-            width: 50px;
+            /* width: 50px; */
         }
 
         .article-headline {
@@ -81,12 +78,12 @@
 
         .article-source {
             font-size: 20px;
-            width: 180px;
+            /* width: 180px; */
         }
 
         .article-date {
             font-size: 20px;
-            width: 50px;
+            /* width: 50px; */
         }
 
         div {
@@ -97,7 +94,8 @@
     @media screen and (max-width: 661px) {
         .article-number {
             font-size: 12px;
-            width: 30px;
+            width: 10%;
+            /* width: 30px; */
         }
 
         .article-headline {
@@ -106,12 +104,15 @@
 
         .article-source {
             font-size: 14px;
-            width: 140px;
+            width: 25%;
+            /* width: 140px; */
         }
 
         .article-date {
             font-size: 14px;
-            width: 30px;
+            display: none;
+            width: 0;
+            /* width: 30px; */
         }
 
         div {
