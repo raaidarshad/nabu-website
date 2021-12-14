@@ -7,8 +7,7 @@
         weight: number;
     }
 
-    export let topics: weightedTopic[];
-    export let articles;
+    export let cluster;
     export let keywordLimit: number;
 	let isOpen = false
 	const toggle = () => isOpen = !isOpen
@@ -18,8 +17,8 @@
     <div>
         <button class="topic-section-header" on:click={toggle} aria-expanded={isOpen}>
             <span class="topic-section-top-topics">
-                {#each topics.slice(0, keywordLimit) as item, idx}
-                    <span style="color: hsl(0, 0%, {(1-item.weight/topics[0].weight)*100}%">{item.term}</span>{#if idx + 1 !== keywordLimit}<span style="color: hsl(0, 0%, {(1-item.weight/topics[0].weight)*100}%">, </span>{/if}
+                {#each cluster.topics.slice(0, keywordLimit) as item, idx}
+                    <span style="color: hsl(0, 0%, {(1-item.weight/cluster.topics[0].weight)*100}%">{item.term}</span>{#if idx + 1 !== keywordLimit}<span style="color: hsl(0, 0%, {(1-item.weight/cluster.topics[0].weight)*100}%">, </span>{/if}
                 {/each}
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="plus" width="60" height="60" viewBox="0 0 160 160">
@@ -28,8 +27,8 @@
           </svg></button>
         {#if isOpen}
         <div transition:slide={{ duration: 300 }}>
-            {#each articles as item, idx}
-                <ArticleRow rowData={item} num={idx + 1} hasBottomBar={idx + 1 !== articles.length}/>
+            {#each cluster.articles as item, idx}
+                <ArticleRow rowData={item} num={idx + 1} hasBottomBar={idx + 1 !== cluster.articles.length}/>
             {/each}
         </div>
         {/if}
