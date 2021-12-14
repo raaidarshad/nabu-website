@@ -66,6 +66,11 @@ p {
 	font-family: 'Catamaran', sans-serif !important;
 }
 
+.mdc-segmented-button__label {
+	text-transform: none !important;
+	font-family: 'Roboto Mono', monospace !important;
+}
+
 .fd {
 	font-family: 'Catamaran', sans-serif !important;
 }
@@ -73,6 +78,12 @@ p {
 :root {
 	--mdc-theme-primary: black;
 	--mdc-theme-secondary: #fff;
+}
+
+@media screen and (max-width: 900px) {
+	.mdc-segmented-button__label {
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 661px) {
@@ -89,5 +100,9 @@ p {
 		font-size: 16px;
 		margin-top: 20px;
 		margin-bottom: 30px;
+	}
+
+	.mdc-segmented-button__label {
+		font-size: 11px;
 	}
 }
