@@ -3,6 +3,7 @@
     import CircularProgress from '@smui/circular-progress';
     import SegmentedButton, { Segment } from '@smui/segmented-button';
     import { Label } from '@smui/button';
+    import Select, { Option } from '@smui/select';
 
     export let isSection: boolean = true;
     export let topicLimit: number = 3;
@@ -31,11 +32,21 @@
             <div id="latest-nav">
                 <div id="latest-nav-range">
                     <p class="latest-nav-text">News from last:</p>
-                    <SegmentedButton segments={rangeChoices} let:segment singleSelect bind:selected={rangeSelected}>
-                        <Segment {segment}>
-                        <Label>{segment}</Label>
-                        </Segment>
-                    </SegmentedButton>
+                    <div id="latest-nav-range-buttons">
+                        <SegmentedButton segments={rangeChoices} let:segment singleSelect bind:selected={rangeSelected}>
+                            <Segment {segment}>
+                            <Label>{segment}</Label>
+                            </Segment>
+                        </SegmentedButton>
+                    </div>
+                    <!-- switch to menu at 681px width -->
+                    <div id="latest-nav-range-menu">
+                        <Select bind:value={rangeSelected}>
+                            {#each rangeChoices as rc}
+                            <Option value={rc}>{rc}</Option>
+                            {/each}
+                        </Select>
+                    </div>
                 </div>
 
                 <div id="latest-nav-last-updated">
@@ -47,11 +58,21 @@
 
                 <div id="latest-nav-sort">
                     <p class="latest-nav-text">Sort by # of:</p>
-                    <SegmentedButton segments={sortChoices} let:segment singleSelect bind:selected={sortSelected}>
-                        <Segment {segment}>
-                        <Label>{segment}</Label>
-                        </Segment>
-                    </SegmentedButton>
+                    <div id="latest-nav-sort-buttons">
+                        <SegmentedButton segments={sortChoices} let:segment singleSelect bind:selected={sortSelected}>
+                            <Segment {segment}>
+                            <Label>{segment}</Label>
+                            </Segment>
+                        </SegmentedButton>
+                    </div>
+                    <!-- switch to menu at 681px width -->
+                    <div id="latest-nav-sort-menu">
+                        <Select bind:value={sortSelected}>
+                            {#each sortChoices as sc}
+                            <Option value={sc}>{sc}</Option>
+                            {/each}
+                        </Select>
+                    </div>
                 </div>
             </div>
         {/if}
@@ -70,6 +91,14 @@
 </main>
 
 <style>
+    #latest-nav-range-menu {
+        display: none;
+    }
+
+    #latest-nav-sort-menu {
+        display: none;
+    }
+
     #latest-page-main-section {
         font-size: 80px;
         font-family: 'Catamaran', sans-serif;
@@ -144,6 +173,24 @@
 
         .latest-nav-text {
             font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 690px) {
+        #latest-nav-range-buttons {
+            display: none;
+        }
+
+        #latest-nav-range-menu {
+            display: flex;
+        }
+
+        #latest-nav-sort-buttons {
+            display: none;
+        }
+
+        #latest-nav-sort-menu {
+            display: flex;
         }
     }
 

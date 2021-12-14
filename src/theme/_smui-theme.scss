@@ -71,6 +71,20 @@ p {
 	font-family: 'Roboto Mono', monospace !important;
 }
 
+.mdc-deprecated-list {
+	font-family: 'Roboto Mono', monospace !important;
+	color: grey;
+}
+
+.mdc-select__selected-text {
+	font-family: 'Roboto Mono', monospace !important;
+	color: grey;
+}
+
+.mdc-select {
+	width: 100%;
+}
+
 .fd {
 	font-family: 'Catamaran', sans-serif !important;
 }
@@ -83,6 +97,16 @@ p {
 @media screen and (max-width: 900px) {
 	.mdc-segmented-button__label {
 		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.mdc-deprecated-list {
+		font-size: 14px !important;
+	}
+	
+	.mdc-select__selected-text {
+		font-size: 14px !important;
 	}
 }
 
@@ -104,5 +128,13 @@ p {
 
 	.mdc-segmented-button__label {
 		font-size: 11px;
+	}
+
+	.mdc-deprecated-list {
+		font-size: 11px !important;
+	}
+	
+	.mdc-select__selected-text {
+		font-size: 11px !important;
 	}
 }
