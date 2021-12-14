@@ -15,7 +15,7 @@
     style="height: 97px; display: flex; justify-content: center;">
     <Row>
         <Section>
-            <Title><span id="logo-name">Nabu</span></Title>
+            <Title><a id="logo-link" href="/"><span id="logo-name">Nabu</span></a></Title>
         </Section>
         <div id="nav-wide-menu">
             <Section align="end" toolbar>
@@ -60,7 +60,10 @@
         font-size: 48px;
         line-height: 55px;
         color: #4F4F4F;
+    }
 
+    #logo-link {
+        text-decoration: none;
     }
 
     span {

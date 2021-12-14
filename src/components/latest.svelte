@@ -8,18 +8,34 @@
     export let isSection: boolean = true;
     export let topicLimit: number = 3;
 
-    export async function loadData() {
+    async function loadData() {
         const latestData = await (await fetch('/latestData')).json();
         console.log(latestData);
         return latestData;
-    }
+    };
 
     const theData = loadData();
+    const theTime = theData.then((d) => { return d.added_at });
+
 
     let rangeChoices = ['12h', '1d', '3d', '1w'];
     let rangeSelected = '1d';
     let sortChoices = ['Sources', 'Articles'];
     let sortSelected = 'Sources';
+
+
+    $: theClusters = theData.then((d) => { 
+        console.log(sortSelected);
+        return d.clusters.sort(compareFnFactory(sortSelected));
+         });
+
+    function compareFnFactory(sortType) {
+        if (sortType === 'Sources') {
+            return (a, b) => { return b.source_count - a.source_count; }
+        } else {
+            return (a, b) => { return b.articles.length - a.articles.length; }
+        }
+    }
 </script>
 
 <main>
@@ -28,7 +44,6 @@
             <h1 id="latest" class="small-header">Here's the Latest</h1>
         {:else}
             <h1 id="latest-page-main-section">Here's the Latest</h1>
-
             <div id="latest-nav">
                 <div id="latest-nav-range">
                     <p class="latest-nav-text">News from last:</p>
@@ -51,8 +66,8 @@
 
                 <div id="latest-nav-last-updated">
                     <p class="latest-nav-text">Last updated:</p>
-                    {#await theData then latestData}
-                        <p class="latest-nav-text">{latestData.added_at.split(" ")[1].split(".")[0].slice(0, 5) + ' UTC'}</p>
+                    {#await theTime then latestTime}
+                        <p class="latest-nav-text">{latestTime.split(" ")[1].split(".")[0].slice(0, 5) + ' UTC'}</p>
                     {/await}
                 </div>
 
@@ -78,12 +93,12 @@
         {/if}
 
         <hr/>
-        {#await theData}
+        {#await theClusters}
         <div id="waiting">
             <CircularProgress style="height: 32px; width: 32px;" indeterminate />
         </div>
-        {:then latestData}
-            {#each latestData.clusters.slice(0, topicLimit) as cluster}
+        {:then latestClusters}
+            {#each latestClusters.slice(0, topicLimit) as cluster}
                 <TopicSection {cluster} keywordLimit={3}/>
             {/each}
         {/await}
@@ -112,6 +127,7 @@
         display: flex;
         gap: 5%;
         align-items: flex-start;
+        margin-bottom: 40px;
     }
 
     #latest-nav-range {
@@ -191,6 +207,10 @@
 
         #latest-nav-sort-menu {
             display: flex;
+        }
+
+        #latest-nav {
+            margin-bottom: -10px;
         }
     }
 
