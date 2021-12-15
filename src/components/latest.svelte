@@ -15,17 +15,24 @@
     };
 
     const theData = loadData();
-    const theTime = theData.then((d) => { return d.added_at });
+    const theTime = theData.then((d) => {
+        var localTime = new Date();
+        const timeParts = d.added_at.split(" ")[1].split(".")[0].slice(0, 5).split(":");
+        localTime.setUTCHours(timeParts[0]);
+        localTime.setUTCMinutes(timeParts[1]);
+        localTime.setUTCSeconds(0);
+        return localTime.toLocaleTimeString();
+    });
 
 
-    let rangeChoices = ['12h', '1d', '3d', '1w'];
+    // let rangeChoices = ['12h', '1d', '3d', '1w'];
+    let rangeChoices = ['1d'];
     let rangeSelected = '1d';
     let sortChoices = ['Sources', 'Articles'];
     let sortSelected = 'Sources';
 
 
     $: theClusters = theData.then((d) => { 
-        console.log(sortSelected);
         return d.clusters.sort(compareFnFactory(sortSelected));
          });
 
@@ -67,7 +74,7 @@
                 <div id="latest-nav-last-updated">
                     <p class="latest-nav-text">Last updated:</p>
                     {#await theTime then latestTime}
-                        <p class="latest-nav-text">{latestTime.split(" ")[1].split(".")[0].slice(0, 5) + ' UTC'}</p>
+                        <p class="latest-nav-text">{latestTime}</p>
                     {/await}
                 </div>
 
