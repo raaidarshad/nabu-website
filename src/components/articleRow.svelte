@@ -1,8 +1,8 @@
 <script lang="ts">
     type Article = {
-        headline: string;
+        title: string;
         url: string;
-        sourceName: string;
+        source: string;
         date: string;
     }
     export let rowData: Article;
@@ -13,8 +13,8 @@
 <main>
     <div>
         <span class="article-number">{(num <10 ? `0${num}` : num)}</span>
-        <a href={rowData.url} class="article-headline">{rowData.headline}</a>
-        <span class="article-source">{rowData.sourceName}</span>
+        <a href={rowData.url} class="article-headline">{rowData.title}</a>
+        <span class="article-source">{rowData.source}</span>
         <span class="article-date">{rowData.date}</span>
     </div>
     {#if hasBottomBar}
@@ -38,41 +38,38 @@
     .article-number {
         font-family: 'Roboto Mono', monospace;
         font-size: 20px;
-        width: 85px;
+        width: 5%;
     }
 
     .article-headline {
         font-family: 'Alegreya', serif;
-        font-size: 30px;
-        min-width: 65%;
+        font-size: 28px;
+        width: 65%;
         color: black;
         text-decoration: none;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
     
     .article-source {
         font-family: 'Catamaran', sans-serif;
-        font-size: 26px;
-        width: 200px;
+        font-size: 24px;
+        width: 20%;
         text-align: left;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
 
     .article-date {
         font-family: 'Catamaran', sans-serif;
-        font-size: 26px;
-        width: 85px;
+        font-size: 24px;
+        width: 10%;
         text-align: right;
+        /* overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; */
     }
 
     @media screen and (max-width: 900px) {
         .article-number {
             font-size: 16px;
-            width: 50px;
+            /* width: 50px; */
         }
 
         .article-headline {
@@ -81,12 +78,12 @@
 
         .article-source {
             font-size: 20px;
-            width: 180px;
+            /* width: 180px; */
         }
 
         .article-date {
             font-size: 20px;
-            width: 50px;
+            /* width: 50px; */
         }
 
         div {
@@ -97,7 +94,8 @@
     @media screen and (max-width: 661px) {
         .article-number {
             font-size: 12px;
-            width: 30px;
+            width: 10%;
+            /* width: 30px; */
         }
 
         .article-headline {
@@ -106,12 +104,15 @@
 
         .article-source {
             font-size: 14px;
-            width: 140px;
+            width: 25%;
+            /* width: 140px; */
         }
 
         .article-date {
             font-size: 14px;
-            width: 30px;
+            display: none;
+            width: 0;
+            /* width: 30px; */
         }
 
         div {
