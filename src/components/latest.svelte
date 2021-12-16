@@ -8,14 +8,19 @@
     export let isSection: boolean = true;
     export let topicLimit: number = 3;
 
-    async function loadData() {
-        const latestData = await (await fetch('/latestData')).json();
-        console.log(latestData);
+    let rangeChoices = ['12h', '1d', '3d'];
+    let rangeSelected = '1d';
+    let sortChoices = ['Sources', 'Articles'];
+    let sortSelected = 'Sources';
+
+    async function loadData(selected) {
+        const mapped = {'12h': '12_hours', '1d': '1_days', '3d': '3_days'}[selected];
+        const latestData = await (await fetch(`/latest-${mapped}`)).json();
         return latestData;
     };
 
-    const theData = loadData();
-    const theTime = theData.then((d) => {
+    $: theData = loadData(rangeSelected);
+    $: theTime = theData.then((d) => {
         var localTime = new Date();
         const timeParts = d.added_at.split(" ")[1].split(".")[0].slice(0, 5).split(":");
         localTime.setUTCHours(timeParts[0]);
@@ -23,13 +28,6 @@
         localTime.setUTCSeconds(0);
         return localTime.toLocaleTimeString();
     });
-
-
-    // let rangeChoices = ['12h', '1d', '3d', '1w'];
-    let rangeChoices = ['1d'];
-    let rangeSelected = '1d';
-    let sortChoices = ['Sources', 'Articles'];
-    let sortSelected = 'Sources';
 
 
     $: theClusters = theData.then((d) => { 
