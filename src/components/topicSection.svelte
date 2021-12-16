@@ -1,6 +1,7 @@
 <script lang="ts">
     import { slide } from "svelte/transition";
     import ArticleRow from "../components/articleRow.svelte";
+    import TopicSummary from "../components/topicSummary.svelte";
 
     type weightedTopic = {
         term: string;
@@ -27,6 +28,7 @@
           </svg></button>
         {#if isOpen}
         <div transition:slide={{ duration: 300 }}>
+            <TopicSummary {cluster} />
             {#each cluster.articles as item, idx}
                 <ArticleRow rowData={item} num={idx + 1} hasBottomBar={idx + 1 !== cluster.articles.length}/>
             {/each}
