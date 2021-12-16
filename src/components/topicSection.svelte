@@ -5,8 +5,15 @@
 
     export let cluster;
     export let keywordLimit: number;
-	let isOpen = false
-	const toggle = () => isOpen = !isOpen
+	let isOpen = false;
+	const toggle = () => isOpen = !isOpen;
+
+    function groupBy(xs, key) {
+    return xs.reduce(function(rv, x) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+    }, {});
+    };
 </script>
 
 <main>
