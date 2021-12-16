@@ -33,12 +33,14 @@
         display: flex;
         align-items: center;
         margin: 28px 0;
+        gap: 10px;
     }
 
     .article-number {
         font-family: 'Roboto Mono', monospace;
         font-size: 20px;
         width: 5%;
+        color: #777;
     }
 
     .article-headline {
@@ -54,6 +56,7 @@
         font-size: 24px;
         width: 20%;
         text-align: left;
+        color: #777;
     }
 
     .article-date {
@@ -61,6 +64,7 @@
         font-size: 24px;
         width: 10%;
         text-align: right;
+        color: #777;
         /* overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; */
