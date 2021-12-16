@@ -3,11 +3,6 @@
     import ArticleRow from "../components/articleRow.svelte";
     import TopicSummary from "../components/topicSummary.svelte";
 
-    type weightedTopic = {
-        term: string;
-        weight: number;
-    }
-
     export let cluster;
     export let keywordLimit: number;
 	let isOpen = false
