@@ -6,6 +6,8 @@
 	import Support from '../components/support.svelte';
 	import Contact from '../components/contact.svelte';
 	import Footer from '../components/footer.svelte';
+
+	document.title = "Nabu"
 </script>
 
 <main>
