@@ -2,6 +2,7 @@
     import TopicSection from '../components/topicSection.svelte';
     import CircularProgress from '@smui/circular-progress';
     import SegmentedButton, { Segment } from '@smui/segmented-button';
+    import IconButton from '@smui/icon-button';
     import { Label } from '@smui/button';
     import Select, { Option } from '@smui/select';
 
@@ -46,7 +47,10 @@
 <main>
     <div id="latest-content">
         {#if isSection}
-            <h1 id="latest" class="small-header">Here's the Latest</h1>
+            <div id="latest-section-head">
+                <h1 id="latest" class="small-header">Here's the Latest</h1>
+                <IconButton class="material-icons" href="/latest" style="color: black;">arrow_forward</IconButton>
+            </div>
         {:else}
             <h1 id="latest-page-main-section">Here's the Latest</h1>
             <div id="latest-nav">
@@ -111,6 +115,15 @@
 </main>
 
 <style>
+    #latest-section-head {
+        display: flex;
+        align-items: center;
+    }
+
+    #latest {
+        margin-right: 10px;
+    }
+
     #latest-nav-range-menu {
         display: none;
     }
@@ -212,10 +225,6 @@
 
         #latest-nav-sort-menu {
             display: flex;
-        }
-
-        #latest-nav {
-            margin-bottom: -10px;
         }
     }
 
