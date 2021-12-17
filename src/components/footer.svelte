@@ -14,7 +14,7 @@
             <Button href="/#about"><Label><span>About</span></Label></Button>
             <Button href="/#support"><Label><span>Support</span></Label></Button>
             <Button href="/#contact"><Label><span>Contact</span></Label></Button>
-            <Button href="/#signup"><Label><span>Sign Up</span></Label></Button>
+            <!-- <Button href="/#signup"><Label><span>Sign Up</span></Label></Button> -->
         </Section>
     </Row>
     </TopAppBar>
