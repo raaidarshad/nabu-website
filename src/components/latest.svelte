@@ -49,7 +49,7 @@
         {#if isSection}
             <div id="latest-section-head">
                 <h1 id="latest" class="small-header">Here's the Latest</h1>
-                <IconButton class="material-icons" href="/latest" style="color: black;">arrow_forward</IconButton>
+                <IconButton class="material-icons small-header" href="/latest" style="color: black;">arrow_forward</IconButton>
             </div>
         {:else}
             <h1 id="latest-page-main-section">Here's the Latest</h1>
