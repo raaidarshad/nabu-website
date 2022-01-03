@@ -8,7 +8,12 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		preprocess(),
-		mdsvex({ extensions: ['.svx', '.md'] })
+		mdsvex({
+			extensions: ['.svx', '.md'],
+			layout: {
+				blog: './src/routes/blog/_layout.svelte'
+			}
+		})
 	],
 
 	extensions: ['.svelte', '.svx', '.md'],
