@@ -22,6 +22,7 @@
 <style>
     .blog-post {
         width: 80%;
+        max-width: 960px;
         margin: 50px auto;
     }
 
