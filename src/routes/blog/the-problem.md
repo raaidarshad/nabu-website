@@ -13,7 +13,7 @@ There is evidence to support that Americans find bias in the news to be a proble
 
 There is also deteriorating confidence in news from profesional news outlets, well illustrated by more data from that same report.
 
-<p style="text-align: center;"><img src="https://www.pewresearch.org/journalism/wp-content/uploads/sites/8/2016/07/PJ_2016.07.07_Modern-News-Consumer_2-01.png?w=420" alt="Graph showing the percent of adults who trust the information they get from local news, national news, and family, friends, acquaintances">
+<p style="text-align: center; margin-top: 60px; margin-bottom: 60px;"><img src="https://www.pewresearch.org/journalism/wp-content/uploads/sites/8/2016/07/PJ_2016.07.07_Modern-News-Consumer_2-01.png?w=420" alt="Graph showing the percent of adults who trust the information they get from local news, national news, and family, friends, acquaintances">
 </p>
 
 The best remedy is arguably education: give people the tools and training to know what bias looks like, to know how to verify sources, to know what is credible. But even with education, we don't always have the time or energy to dig to the bottom of every story we come across. That's the whole point of the news, isn't it? People and organizations bring you relevant stories, so that you don't have to go searching for it or figure out what's going on.
