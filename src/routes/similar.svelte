@@ -10,14 +10,14 @@
     import ArticleRow from "../components/articleRow.svelte";
 
     let targetUrl = $page.query.get('url') ? $page.query.get('url') : '';
-    var searchUrl = targetUrl;
+    let searchUrl = targetUrl;
 
     function updateUrl() {
-      goto(`?url=${targetUrl}`, {keepfocus:true, replaceState:true, noscroll:true});
       searchUrl = targetUrl;
+      goto(`?url=${targetUrl}`, {keepfocus:true, replaceState:true, noscroll:true});
     }
 
-    async function getSimilarArticles() {
+    async function getSimilarArticles(inputUrl) {
       // change to a POST so you can put the url in the request body
       const similarArticles = await (
         await fetch(`/submitSearch`, {
@@ -25,7 +25,7 @@
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ target: targetUrl }),
+          body: JSON.stringify({ target: inputUrl }),
         })
         );
       return similarArticles.json();
@@ -44,7 +44,7 @@
     {#if searchUrl.length > 7}
     <!-- hit endpoint. if no match, say so. if yes match, present results. -->
     <div id="search-results">
-      {#await getSimilarArticles()}
+      {#await getSimilarArticles(searchUrl)}
         <p>waiting for results...</p>
       {:then articles}
         <p>Here are the results.</p>
