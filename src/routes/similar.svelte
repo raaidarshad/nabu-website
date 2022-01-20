@@ -8,6 +8,7 @@
     import Nav from '../components/nav.svelte';
     import Footer from '../components/footer.svelte';
     import ArticleRow from "../components/articleRow.svelte";
+import { fix_and_outro_and_destroy_block } from "svelte/internal";
 
     let targetUrl = $page.query.get('url') ? $page.query.get('url') : '';
     let searchUrl = targetUrl;
@@ -47,10 +48,14 @@
       {#await getSimilarArticles(searchUrl)}
         <p>waiting for results...</p>
       {:then articles}
+        {#if articles.rows.length === 0}
+          <p>No results found.</p>
+        {:else}
         <p>Here are the results.</p>
-        {#each articles.rows as item, idx}
-          <ArticleRow rowData={item} num={idx + 1} hasBottomBar={idx + 1 !== articles.rows.length}/>
-        {/each}
+          {#each articles.rows as item, idx}
+            <ArticleRow rowData={item} num={idx + 1} hasBottomBar={idx + 1 !== articles.rows.length}/>
+          {/each}
+        {/if}
       {/await}
     </div>
     {/if}

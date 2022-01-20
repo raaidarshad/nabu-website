@@ -15,7 +15,7 @@
         <span class="article-number">{(num <10 ? `0${num}` : num)}</span>
         <a href={rowData.url} class="article-headline">{rowData.title}</a>
         <span class="article-source">{rowData.source}</span>
-        <span class="article-date">{rowData.date}</span>
+        <span class="article-date">{rowData.date.split("T")[0]}</span>
     </div>
     {#if hasBottomBar}
         <hr/>
