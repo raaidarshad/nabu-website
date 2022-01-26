@@ -17,7 +17,8 @@ We have a variety of ideas and features in various stages of development. Some a
 - [ ] A Chrome browser extension using the similar-article endpoint
 - [ ] A Twitter bot that uses the similar-article endpoint
 - [ ] A Reddit bot that uses the similar-article endpoint
-- [ ] A daily & weekly email roundup of topic-grouped articles
+- [ ] A daily email of topic-grouped articles
+- [ ] A weekly email of topic-grouped articles
 
 ### Later
 - [ ] Storing the similarity measure between articles
@@ -31,6 +32,9 @@ We have a variety of ideas and features in various stages of development. Some a
 - [ ] Inflammatory language flag
 - [ ] Topic summarization
 - [ ] Identify spread of story within a topic
+
+### Perpetual
+- Adding more sources
 
 
 <style>

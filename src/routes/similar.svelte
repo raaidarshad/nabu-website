@@ -8,7 +8,6 @@
     import Nav from '../components/nav.svelte';
     import Footer from '../components/footer.svelte';
     import ArticleRow from "../components/articleRow.svelte";
-import { fix_and_outro_and_destroy_block } from "svelte/internal";
 
     let targetUrl = $page.query.get('url') ? $page.query.get('url') : '';
     let searchUrl = targetUrl;
