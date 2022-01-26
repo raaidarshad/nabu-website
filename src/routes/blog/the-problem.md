@@ -1,7 +1,7 @@
 ---
 title: The Problem - Bias
 author: Raaid Arshad
-date: '2022-01-13'
+date: '2022-01-26'
 layout: blog
 ---
 

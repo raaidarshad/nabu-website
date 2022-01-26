@@ -19,7 +19,6 @@ import { fix_and_outro_and_destroy_block } from "svelte/internal";
     }
 
     async function getSimilarArticles(inputUrl) {
-      // change to a POST so you can put the url in the request body
       const similarArticles = await (
         await fetch(`/submitSearch`, {
           method: 'POST',
