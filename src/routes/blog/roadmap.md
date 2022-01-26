@@ -13,11 +13,20 @@ We have a variety of ideas and features in various stages of development. Some a
 - [x] Latest articles, grouped by topic
 - [x] Endpoint that accepts an article URL and returns a list of similar articles
 - [x] A simplified page view using the similar-article endpoint
+- [ ] A Firefox browser extension using the similar-article endpoint
+- [ ] A Chrome browser extension using the similar-article endpoint
 - [ ] A Twitter bot that uses the similar-article endpoint
 - [ ] A Reddit bot that uses the similar-article endpoint
 - [ ] A daily & weekly email roundup of topic-grouped articles
 
 ### Later
+- [ ] Storing the similarity measure between articles
+- [ ] Using the similarity measure to better sort articles
+- [ ] Data visualization of article similarities within and across clusters
+- [ ] Alternative card view of articles
+- [ ] "Opinion" article flag
+
+### Even Later
 - [ ] Subjectivity/objectivity measurement
 - [ ] Inflammatory language flag
 - [ ] Topic summarization
