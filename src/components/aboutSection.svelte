@@ -14,7 +14,7 @@
     </div>
     <div class="about-section-right">
         <hr/>
-        <p>{textContent}</p>
+        <p>{@html textContent}</p>
     </div>
 </main>
 

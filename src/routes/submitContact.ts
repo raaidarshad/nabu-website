@@ -1,10 +1,4 @@
-type myresponse = {
-    status: number;
-    headers?: any;
-    body?: {msg: string};
-  };
-
-export function post(req: {body: {name: string, email: string, message: string}}): myresponse {
+export function post(req: {body: {name: string, email: string, message: string}}): {status: number, body: {msg: string}} {
     if (!req.body.name) {
         return {status: 400, body: {msg: "No name provided. Please enter a name."} }
     } else if (!req.body.email) {

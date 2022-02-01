@@ -234,11 +234,7 @@
         }
 
         #latest-page-main-section {
-            font-size: 50px;
-        }
-
-        #latest-page-main-section {
-            font-size: 30px;
+            font-size: 36px;
         }
 
         .latest-nav-text {
