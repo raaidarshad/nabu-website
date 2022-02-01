@@ -1,11 +1,12 @@
 import { Client } from 'pg';
 
 
-export async function post(req: { body: {target: string } }): Promise<{ status: number, body: any }> {
+export async function post({ request }): Promise<{ status: number, body: any }> {
     const client = new Client({
         ssl: { rejectUnauthorized: false },
       });
     await client.connect();
+    const body = await request.json();
     const query = `
     WITH onedayclusters AS (SELECT *
         FROM articleclusterlink acl1
@@ -27,7 +28,7 @@ export async function post(req: { body: {target: string } }): Promise<{ status: 
     ORDER BY added_at ASC;`
 
     const res = await client
-    .query(query, [`%${req.body.target}%`])
+    .query(query, [`%${body.target}%`])
     .then(r => r)
     .catch(e => { console.log(e.stack); return {rows: []}; } )
     // if no match, return something that indicates no match
