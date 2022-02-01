@@ -9,7 +9,7 @@
     import Footer from '../components/footer.svelte';
     import ArticleRow from "../components/articleRow.svelte";
 
-    let targetUrl = $page.query.get('url') ? $page.query.get('url') : '';
+    let targetUrl = $page.url.searchParams.get('url') ? $page.url.searchParams.get('url') : '';
     let searchUrl = targetUrl;
 
     function updateUrl() {
