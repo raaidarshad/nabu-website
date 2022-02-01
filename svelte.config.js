@@ -1,6 +1,6 @@
 import preprocess from 'svelte-preprocess';
 import vercel from '@sveltejs/adapter-vercel';
-import { mdsvex } from "mdsvex";
+import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -19,11 +19,10 @@ const config = {
 	extensions: ['.svelte', '.svx', '.md'],
 
 	kit: {
-		adapter: vercel({external: ['pg-native']}),
+		adapter: vercel({ external: ['pg-native'] }),
 
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
-		ssr: false
+		target: '#svelte'
 	}
 };
 
