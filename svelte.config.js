@@ -19,7 +19,7 @@ const config = {
 	extensions: ['.svelte', '.svx', '.md'],
 
 	kit: {
-		adapter: vercel({external: ['pg']}),
+		adapter: vercel({external: ['*/pg-native']}),
 
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
