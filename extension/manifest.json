@@ -1,0 +1,18 @@
+{
+	"name": "Nabu News",
+	"description": "Find similar news stories from other sources",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "/images/favicon-32x32.png"
+	},
+	"icons": {
+		"16": "/images/favicon-32x32.png",
+		"32": "/images/favicon-32x32.png",
+		"48": "/images/favicon-32x32.png",
+		"128": "/images/favicon-32x32.png"
+	},
+	"permissions": ["tabs"],
+	"host_permissions": ["https://www.nabu.news/*"]
+}
