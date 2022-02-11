@@ -9,8 +9,12 @@
             </div>
             <div id="support-content-right">
                 <hr id="support-content-right-hr"/>
-                <p>This is currently and independent, one-person passion-project. I would love to work on this full time if I can get enough support. Beyond that, additional funding would simply mean more people to work on this. <a href="https://www.google.com">You can support this project here.</a></p>
+                <p>This is currently and independent, one-person passion-project. I would love to work on this full time if I can get enough support. Beyond that, additional funding would simply mean more people to work on this.</p>
             </div>
+        </div>
+        <div>
+            <p>Recurring donations of <a href='https://buy.stripe.com/dR6eVw42afNs5Fu288'>$1</a>, <a href='https://buy.stripe.com/4gwfZAfKSgRwc3S8wx'>$5</a>, <a href='https://buy.stripe.com/bIY9BcfKS44K3xmeUW'>$10</a>, or (if you're made of money) <a href='https://buy.stripe.com/8wMcNo8iq7gW6JyfZ1'>$25</a> would be tremendously helpful.
+            If you have some cryptocurrency that you'd like to put towards this project, you can do so <a href=''>here</a>.</p>
         </div>
     </div>
 </main>
