@@ -5,11 +5,7 @@ export async function get(): Promise<{ status: number, body: any }> {
         ssl: { rejectUnauthorized: false },
       });
     await client.connect();
-    const query = `
-    SELECT s.name, json_agg(r.url) AS feeds FROM source s
-    JOIN rssfeed r on s.id = r.source_id WHERE r.is_okay
-    GROUP BY s.name
-    ORDER BY s.name;`
+    const query = `SELECT name, url FROM source;`
 
     const res = await client
     .query(query)

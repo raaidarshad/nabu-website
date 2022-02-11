@@ -15,12 +15,7 @@ import Item from "@smui/list/src/Item.svelte";
         {:then theData}
             {#each theData.rows as item}
                 <li>
-                    {item.name}
-                    <ul>
-                        {#each item.feeds as feed}
-                            <li><a href={feed}>{feed}</a></li>
-                        {/each}
-                    </ul>
+                    <a href={'https://' + item.url} target='_blank'>{item.name}</a>
                 </li>
             {/each}
         {/await}
