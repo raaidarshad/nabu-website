@@ -5,23 +5,20 @@
         <div id="support-content">
             <div id="support-content-left">
                 <hr/>
-                <p>Any support first goes towards the technology: This website, the data processing and machine learning pipelines, the corresponding databases, etc. This varies as tools and features are added/removed. Anything after that funds further development.</p>
+                <p>Any support first goes towards the technology: This website, the data processing and machine learning pipelines, the corresponding databases, etc. This varies as tools and features are added/removed. Anything after that funds further development. This is currently and independent, one-person passion-project. </p>
             </div>
             <div id="support-content-right">
                 <hr id="support-content-right-hr"/>
-                <p>This is currently and independent, one-person passion-project. I would love to work on this full time if I can get enough support. Beyond that, additional funding would simply mean more people to work on this.</p>
+                <p>I would love to work on this full time if I can get enough support. Recurring donations of <a href='https://buy.stripe.com/dR6eVw42afNs5Fu288'>$1</a>, <a href='https://buy.stripe.com/4gwfZAfKSgRwc3S8wx'>$5</a>, <a href='https://buy.stripe.com/bIY9BcfKS44K3xmeUW'>$10</a>, or (if you're made of money) <a href='https://buy.stripe.com/8wMcNo8iq7gW6JyfZ1'>$25</a> would be tremendously helpful.
+                    If you have some cryptocurrency that you'd like to put towards this project, you can do so <a href=''>here</a>.</p>
             </div>
-        </div>
-        <div>
-            <p>Recurring donations of <a href='https://buy.stripe.com/dR6eVw42afNs5Fu288'>$1</a>, <a href='https://buy.stripe.com/4gwfZAfKSgRwc3S8wx'>$5</a>, <a href='https://buy.stripe.com/bIY9BcfKS44K3xmeUW'>$10</a>, or (if you're made of money) <a href='https://buy.stripe.com/8wMcNo8iq7gW6JyfZ1'>$25</a> would be tremendously helpful.
-            If you have some cryptocurrency that you'd like to put towards this project, you can do so <a href=''>here</a>.</p>
         </div>
     </div>
 </main>
 
 <style>
     main {
-        height: 700px;
+        height: 800px;
         padding-top: 40px;
         background-color: #95BF47;
         padding-left: 10px;
