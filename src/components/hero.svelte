@@ -4,7 +4,9 @@
             <h1>The latest news from every angle.</h1>
         </div>
         <div id="hero-sub-text">
-            <p>See how a story is covered by every outlet, all in one place. Stay tuned for a newsletter and updates on future tools.</p>
+            <p>See how a story is covered by every outlet, all in one place. Get the browser extension now.</p>
+            <a id='firefox-cta' href='https://addons.mozilla.org/en-US/firefox/addon/nabu/'><p><img src="/static/ff-logo.png" alt="Firefox extension">Firefox</p></a>
+            <a id='firefox-cta' href='https://addons.mozilla.org/en-US/firefox/addon/nabu/'><p><img src="/static/chrome-logo.png" alt="chrome extension">Chrome</p></a>
         </div>
     
         <div id="hero-rect-1"/>
@@ -20,6 +22,29 @@
         background-color: #E7E2DE;
         position: relative;
         overflow: hidden;
+    }
+
+    img {
+        width: auto;
+        max-height: 40px;
+        vertical-align: middle;
+    }
+
+    #firefox-cta {
+        padding: 0px 12px;
+        background: #000;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 3px;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000;
+        text-decoration: none !important;
+        line-height: 1;
     }
 
     #my-hero {
@@ -89,6 +114,12 @@
         border-right: 295px solid transparent;
         bottom: 80px;
         left: 1170px;
+    }
+
+    @media screen and (max-width: 936px) {
+        #hero-sub-text {
+            margin-top: 100px;
+        }
     }
 
     @media screen and (max-width: 815px) {
