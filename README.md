@@ -29,3 +29,7 @@ npm run build
 ```
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+## Blog
+
+Any new blog posts go in the src/routes/blog directory as `*.md` files. Make sure to include the frontmatter for any post. The easiest way is to copy-paste, then rename and update, the `first.md` file. I don't intend to blog super often, but this is a very easy way to add new simple pages that can have extended functionality with Svelte components.
