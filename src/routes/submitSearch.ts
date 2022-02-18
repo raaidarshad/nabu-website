@@ -33,8 +33,29 @@ export async function post({ request }): Promise<{ status: number, body: any }> 
     const res = await client
     .query(query, [`%${targetUrl}%`])
     .then(r => r)
-    .catch(e => { console.log(e.stack); return {rows: []}; } )
+    .catch(e => { console.log(e.stack); return {rows: []}; } );
     // if no match, return something that indicates no match
-    await client.end()
+    await client.end();
+
+    // log to log store (graphjson)
+    const event = {
+      'url': targetUrl,
+      'hit_count': res.rows.length,
+      'client': request.headers.get('User-Agent')
+    };
+
+    const payload = {
+      api_key: process.env.GJ_API_KEY,
+      collection: "similarity_hits",
+      json: JSON.stringify(event),
+      timestamp: Math.floor(new Date().getTime() / 1000),
+    };
+
+    await fetch("https://api.graphjson.com/api/log", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+
     return {status: 200, body: {rows: res.rows}}
 }

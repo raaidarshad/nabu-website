@@ -4,10 +4,10 @@ This is the code for the [Nabu website](https://www.nabu.news). The project has 
 The browser extension can be found [here](https://github.com/raaidarshad/nabu-browser-extension), and the data processing can be found [here](https://github.com/raaidarshad/nabu-core).
 
 ### Helpful links
-- [Vercel](https://vercel.com/dashboard) (GitHub login)
-- [CloudFlare](https://dash.cloudflare.com) (email login)
-- [Plausible Analytics](https://plausible.io/nabu.news) (email login)
-
+- [Vercel](https://vercel.com/dashboard)
+- [CloudFlare](https://dash.cloudflare.com)
+- [Plausible Analytics](https://plausible.io/nabu.news)
+- [GraphJSON](https://www.graphjson.com/dashboard)
 
 ## Developing
 
