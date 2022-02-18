@@ -1,20 +1,11 @@
-# create-svelte
+# Nabu Website
+This is the code for the [Nabu website](https://www.nabu.news). The project has CI/CD setup with Vercel. Made with Svelte.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+### Helpful links
+- [Vercel](https://vercel.com/dashboard) (GitHub login)
+- [CloudFlare](https://dash.cloudflare.com) (email login)
+- [Plausible Analytics](https://plausible.io/nabu.news) (email login)
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
 
 ## Developing
 
