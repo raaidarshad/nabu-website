@@ -7,6 +7,9 @@ export async function post({ request }): Promise<{ status: number, body: any }> 
       });
     await client.connect();
     const body = await request.json();
+    // easy way to make sure that the url works even if there are some query params, otherwise the url passes through untouched
+    const targetUrl = body.target.split('?')[0];
+
     const query = `
     WITH onedayclusters AS (SELECT *
         FROM articleclusterlink acl1
@@ -28,7 +31,7 @@ export async function post({ request }): Promise<{ status: number, body: any }> 
     ORDER BY added_at ASC;`
 
     const res = await client
-    .query(query, [`%${body.target}%`])
+    .query(query, [`%${targetUrl}%`])
     .then(r => r)
     .catch(e => { console.log(e.stack); return {rows: []}; } )
     // if no match, return something that indicates no match
