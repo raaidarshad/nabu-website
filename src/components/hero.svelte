@@ -6,7 +6,7 @@
         <div id="hero-sub-text">
             <p>See how a story is covered by every outlet, all in one place. Get the browser extension now.</p>
             <a id='firefox-cta' href='https://addons.mozilla.org/en-US/firefox/addon/nabu/'><p><img src="/static/ff-logo.png" alt="Firefox extension">Firefox</p></a>
-            <a id='firefox-cta' href='https://addons.mozilla.org/en-US/firefox/addon/nabu/'><p><img src="/static/chrome-logo.png" alt="chrome extension">Chrome</p></a>
+            <!-- <a id='firefox-cta' href='https://addons.mozilla.org/en-US/firefox/addon/nabu/'><p><img src="/static/chrome-logo.png" alt="chrome extension">Chrome</p></a> -->
         </div>
     
         <div id="hero-rect-1"/>
@@ -31,20 +31,25 @@
     }
 
     #firefox-cta {
-        padding: 0px 12px;
+        padding: 0 12px;
         background: #000;
         color: #fff;
         font-weight: 500;
         line-height: 1;
         font-size: 15px;
         text-align: center;
-        border-radius: 3px;
+        border-radius: 7px;
         display: inline-block;
         align-items: center;
         justify-content: center;
         border: 1px solid #000;
         text-decoration: none !important;
         line-height: 1;
+    }
+
+    #firefox-cta p {
+        line-height: 0;
+        font-size: 25px;
     }
 
     #my-hero {
@@ -165,6 +170,10 @@
         main {
             height: 600px;
         }
+
+        #firefox-cta p {
+        font-size: 20px;
+    }
     }
 
 </style>
