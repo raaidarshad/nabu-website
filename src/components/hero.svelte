@@ -5,7 +5,7 @@
         </div>
         <div id="hero-sub-text">
             <p>See how a story is covered by every outlet, all in one place. Get the browser extension now.</p>
-            <a id='firefox-cta' href='https://addons.mozilla.org/en-US/firefox/addon/nabu/'><p><img src="/static/ff-logo.png" alt="Firefox extension">Firefox</p></a>
+            <a id='firefox-cta' href='https://addons.mozilla.org/en-US/firefox/addon/nabu/'><p><img src=".output/static/ff-logo.png" alt="Firefox extension">Firefox</p></a>
             <!-- <a id='firefox-cta' href='https://addons.mozilla.org/en-US/firefox/addon/nabu/'><p><img src="/static/chrome-logo.png" alt="chrome extension">Chrome</p></a> -->
         </div>
     
