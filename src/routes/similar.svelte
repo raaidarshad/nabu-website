@@ -49,6 +49,7 @@
         {#if articles.rows.length === 0}
           <p>No results found.</p>
         {:else}
+        <p>Want these results easily accessible in your browser? <a href='/'>Get the browser extension.</a></p>
         <p>Here are the results.</p>
           {#each articles.rows as item, idx}
             <ArticleRow rowData={item} num={idx + 1} hasBottomBar={idx + 1 !== articles.rows.length}/>

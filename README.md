@@ -1,20 +1,13 @@
-# create-svelte
+# Nabu Website
+This is the code for the [Nabu website](https://www.nabu.news). The project has CI/CD setup with Vercel. Made with Svelte.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+The browser extension can be found [here](https://github.com/raaidarshad/nabu-browser-extension), and the data processing can be found [here](https://github.com/raaidarshad/nabu-core).
 
-## Creating a project
+### Helpful links
+- [Vercel](https://vercel.com/dashboard) (GitHub login)
+- [CloudFlare](https://dash.cloudflare.com) (email login)
+- [Plausible Analytics](https://plausible.io/nabu.news) (email login)
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
 
 ## Developing
 
@@ -36,3 +29,7 @@ npm run build
 ```
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+## Blog
+
+Any new blog posts go in the src/routes/blog directory as `*.md` files. Make sure to include the frontmatter for any post. The easiest way is to copy-paste, then rename and update, the `first.md` file. I don't intend to blog super often, but this is a very easy way to add new simple pages that can have extended functionality with Svelte components.

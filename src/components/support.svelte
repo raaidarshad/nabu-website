@@ -5,11 +5,11 @@
         <div id="support-content">
             <div id="support-content-left">
                 <hr/>
-                <p>A small amount goes towards the technology: This website, the data processing and machine learning pipelines, the corresponding databases, etc. This varies as tools and features are added/removed, but is generally on the order of a few hundred dollars. After the tech costs, we pay our small team.</p>
+                <p>Any support first goes towards the technology: This website, the data processing and machine learning pipelines, the corresponding databases, etc. This varies as tools and features are added/removed. Anything after that funds further development.</p>
             </div>
             <div id="support-content-right">
                 <hr id="support-content-right-hr"/>
-                <p>Our time goes into maintaining existing solutions, making them better, then researching, designing, and building new ways to further our goal. Beyond that, additional funding simply means we can dedicate more time and people to creating tools and services to identify and understand bias.</p>
+                <p>This is currently and independent, one-person passion-project. I would love to work on this full time if I can get enough support. Recurring donations of <a href='https://buy.stripe.com/dR6eVw42afNs5Fu288'>$1</a>, <a href='https://buy.stripe.com/4gwfZAfKSgRwc3S8wx'>$5</a>, <a href='https://buy.stripe.com/bIY9BcfKS44K3xmeUW'>$10</a>, or (if you're made of money) <a href='https://buy.stripe.com/8wMcNo8iq7gW6JyfZ1'>$25</a> would be tremendously helpful.</p>
             </div>
         </div>
     </div>

@@ -16,7 +16,7 @@
                 <p>Thoughts?</p>
                 <p>Questions?</p>
                 <p>Just want to say hi?</p>
-                <p><a href="mailto:hello@nabu.news">Email us!</a> A member of our team will respond to you as soon as we can.</p>
+                <p><a href="mailto:hello@nabu.news">Email us!</a> A member of our (one-person) team will respond to you as soon as we can.</p>
             </div>
         </div>
     </div>
