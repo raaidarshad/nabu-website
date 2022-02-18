@@ -23,6 +23,7 @@
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            'User-Agent': 'nabu-website'
           },
           body: JSON.stringify({ target: inputUrl }),
         })
