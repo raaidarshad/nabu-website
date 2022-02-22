@@ -28,7 +28,8 @@ export async function post({ request }): Promise<{ status: number, body: any }> 
     JOIN
     articleclusterlink a2 ON onedayclusters.article_cluster_id = a2.article_cluster_id
     WHERE a2.article_id = (SELECT id FROM target)) b ON a.id = b.article_id
-    ORDER BY added_at ASC;`
+    AND a.id != (SELECT id FROM target)
+    ORDER BY added_at DESC;`
 
     const res = await client
     .query(query, [`%${targetUrl}%`])
