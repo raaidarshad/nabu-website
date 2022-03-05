@@ -15,8 +15,7 @@
             <Button href="/#support"><Label><span>Support</span></Label></Button>
             <Button href="/#contact"><Label><span>Contact</span></Label></Button>
             <Button href="/blog/roadmap"><Label><span>Roadmap</span></Label></Button>
-            <Button href="/blog/sources"><Label><span>Current sources</span></Label></Button>
-            <Button href="https://github.com/raaidarshad/"><Label><span>GitHub</span></Label></Button>
+            <Button href="/blog/sources"><Label><span>Sources</span></Label></Button>
         </Section>
     </Row>
     </TopAppBar>
