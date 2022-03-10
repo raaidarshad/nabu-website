@@ -5,7 +5,7 @@ export async function get(): Promise<{ status: number, body: any }> {
         ssl: { rejectUnauthorized: false },
       });
     await client.connect();
-    const query = `SELECT name, url FROM source;`
+    const query = `SELECT name, url FROM source ORDER BY name;`
 
     const res = await client
     .query(query)
