@@ -1,11 +1,11 @@
 # Nabu Website
 This is the code for the Nabu website. The project has CI/CD setup with Vercel. Made with Svelte.
 
-[Website](https://www.nabu.news)
-[Website code repository](https://github.com/raaidarshad/nabu-website)
-[Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/nabu/)
-[Chrome Extension](https://chrome.google.com/webstore/detail/nabu/bgmcmbjhfdnfaplfiiphlefclhhhnajb)
-[Data processing/core code repository](https://github.com/raaidarshad/nabu-core)
+- [Website](https://www.nabu.news)
+- [Website code repository](https://github.com/raaidarshad/nabu-website)
+- [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/nabu/)
+- [Chrome Extension](https://chrome.google.com/webstore/detail/nabu/bgmcmbjhfdnfaplfiiphlefclhhhnajb)
+- [Data processing/core code repository](https://github.com/raaidarshad/nabu-core)
 
 
 ### Helpful links
